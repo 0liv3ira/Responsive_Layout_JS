@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        /* Esconde o conteúdo da página em dispositivos que não são móveis */
+        @media only screen and (min-width: 480px) {
+          #mobile-only {
+            display: none;
+          }
+        }
+      </style>
+</head>
+<body>
+    <script>
+        // Verifica se o conteúdo está sendo exibido
+        var mobileOnly = document.getElementById("mobile-only");
+        if (getComputedStyle(mobileOnly).display !== "none") {
+          // Conteúdo está sendo exibido, portanto, estamos em um dispositivo móvel
+        }
+      </script>
+    
+    <div id="mobile-only">
+        Conteúdo da página que só será mostrado em dispositivos móveis.
+      </div>
+
+</body>
+</html>
